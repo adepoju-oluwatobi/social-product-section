@@ -23,10 +23,10 @@ body{
 section{
     padding: 20px;
 }
-.hero{
+.one{
     padding-top: 90px;
 }
-.hero .title{
+section.one .title{
     text-align: center;
     margin: auto;
     width: 15ch;
@@ -35,7 +35,7 @@ section{
     font-weight: bold;
     line-height: 25px;
 }
-.hero .text{
+section.one .text{
     text-align: center;
     padding-top: 20px;
     color: hsl(300, 43%, 22%);
@@ -54,6 +54,40 @@ section.two .rate{
 }
 .rate img{
     margin-left: 5px;
+}
+section.three img{
+    border-radius: 100%;
+    width: 40px;
+}
+section.three .profile{
+    width: 80%;
+    color: white;
+    margin: auto;
+    margin-bottom: 10px;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 10px;
+    background: hsl(300, 43%, 22%);
+}
+section.three .content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+section.three .name{
+    font-weight: bold;
+}
+section.three .description{
+    color: hsl(333, 80%, 67%);
+}
+section.three .data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+section.three .text{
+    margin-top: 20px;
+    line-height: 20px;
 }
 @media (min-width:425px){
     body{
