@@ -44,7 +44,17 @@ section{
     margin: auto;
     line-height: 25px;
 }
-
+section.two .rate{
+    background: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.rate img{
+    margin-left: 5px;
+}
 @media (min-width:425px){
     body{
         background: url('./images/bg-pattern-top-mobile.svg');
