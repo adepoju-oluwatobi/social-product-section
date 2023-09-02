@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+    overflow: hidden;
+}
+.bg-top{
+    position: absolute;
+    /* top: -50px; */
+    transform: rotate(-15deg);
+}
+section{
+    padding: 20px;
+}
+.hero{
+    padding-top: 70px;
+}
+.hero .title{
+    text-align: center;
+    margin: auto;
+    /* width: 15ch; */
+    color: hsl(300, 43%, 22%);
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.hero .text{
+    text-align: center;
+    margin-top: 20px;
+    color: hsl(300, 43%, 22%);
+    opacity: 70%;
+    line-height: 25px;
+}
