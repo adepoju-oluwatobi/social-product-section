@@ -1,97 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
-body{
-    font-family: 'League Spartan', sans-serif;
-    width: 100%;
-    height: 100vh;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: -20px;
 }
-.bg-top{
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.bg-top {
+  position: absolute;
+  width: 99%;
+  /* top: 10px; */
+  /* transform: rotate(15deg); */
+}
+.bg-top-desktop {
+  display: none;
+}
+section {
+  padding: 20px;
+}
+.one {
+  padding-top: 90px;
+}
+section.one .title {
+  text-align: center;
+  margin: auto;
+  width: 15ch;
+  color: hsl(300, 43%, 22%);
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 25px;
+}
+section.one .text {
+  text-align: center;
+  padding-top: 20px;
+  color: hsl(300, 43%, 22%);
+  opacity: 70%;
+  width: 30ch;
+  margin: auto;
+  line-height: 25px;
+}
+section.two .rate {
+  background: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.rate img {
+  margin-left: 5px;
+}
+section.three img {
+  border-radius: 100%;
+  width: 40px;
+}
+section.three .profile {
+  width: 80%;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  background: hsl(300, 43%, 22%);
+}
+section.three .content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+section.three .name {
+  font-weight: bold;
+}
+section.three .description {
+  color: hsl(333, 80%, 67%);
+}
+section.three .data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section.three .text {
+  margin-top: 20px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .bg-top {
+    display: none;
+  }
+  .bg-top-desktop {
+    display: block;
     position: absolute;
-    width: 99%;
-    /* top: 10px; */
-    /* transform: rotate(15deg); */
-}
-section{
-    padding: 20px;
-}
-.one{
-    padding-top: 90px;
-}
-section.one .title{
-    text-align: center;
-    margin: auto;
-    width: 15ch;
-    color: hsl(300, 43%, 22%);
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 25px;
-}
-section.one .text{
-    text-align: center;
-    padding-top: 20px;
-    color: hsl(300, 43%, 22%);
-    opacity: 70%;
-    width: 30ch;
-    margin: auto;
-    line-height: 25px;
-}
-section.two .rate{
-    background: hsl(300, 24%, 96%);
-    color: hsl(300, 43%, 22%);
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-.rate img{
-    margin-left: 5px;
-}
-section.three img{
-    border-radius: 100%;
-    width: 40px;
-}
-section.three .profile{
-    width: 80%;
-    color: white;
-    margin: auto;
-    margin-bottom: 10px;
-    height: fit-content;
-    padding: 30px;
-    border-radius: 10px;
-    background: hsl(300, 43%, 22%);
-}
-section.three .content{
+  }
+  section {
+    padding: 0 120px;
+  }
+  .split-one {
+    width: 100%;
     display: flex;
-    gap: 10px;
+  }
+  section.one {
+    /* background: blue; */
+  }
+  section.one .title {
+    text-align: left;
+  }
+  section.one .text {
+    text-align: left;
+  }
+  section.two {
+    width: 50%;
+    margin-left: 10%;
+    padding: 90px 0 0 0;
+    /* background: black; */
+  }
+  section.two .rate {
+    display: flex;
     align-items: center;
-}
-section.three .name{
-    font-weight: bold;
-}
-section.three .description{
-    color: hsl(333, 80%, 67%);
-}
-section.three .data{
+    width: 350px;
+  }
+  section.two .two{
+    margin-left: 50px;
+  }
+  section.two .three{
+    margin-left: 100px;
+  }
+  section.three {
+    gap: -20px;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-section.three .text{
+    flex-direction: row;
     margin-top: 20px;
+  }
+
+  section.three .profile {
+    gap: -10px;
+    width: fit-content;
+    /* width: calc(33.33% - 20px); Adjust profile width to fit 3 profiles in a row */
+  }
+
+  section.three .text {
+    width: 30ch; /* Adjust text width to fill the entire space */
+    margin-top: 20px; /* Reset top margin to your preferred spacing */
     line-height: 20px;
-}
-@media (min-width:425px){
-    body{
-        background: url('./images/bg-pattern-top-mobile.svg');
-        background-size: contain;
-    }
+  }
 }
